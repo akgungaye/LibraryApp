@@ -28,6 +28,8 @@ public class BrowserUtils {
         Driver.get().switchTo().window(origin);
     }
 
+
+
     /**
      * Moves the mouse to given element
      *
@@ -45,6 +47,8 @@ public class BrowserUtils {
      * @return list of string
      */
     public static List<String> getElementsText(List<WebElement> list) {
+        BrowserUtils.waitFor(5);
+
         List<String> elemTexts = new ArrayList<>();
         for (WebElement el : list) {
             elemTexts.add(el.getText());

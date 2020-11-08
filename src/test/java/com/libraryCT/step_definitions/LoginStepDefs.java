@@ -1,7 +1,6 @@
 package com.libraryCT.step_definitions;
 
 import com.libraryCT.pages.LoginPage;
-import com.libraryCT.pages.MainPage;
 import com.libraryCT.utilities.BrowserUtils;
 import com.libraryCT.utilities.ConfigurationReader;
 import com.libraryCT.utilities.Driver;
@@ -27,7 +26,7 @@ public class LoginStepDefs {
     }
 
     @Then("user should able to log in")
-    public void user_should_able_to_log_in() throws InterruptedException {
+    public void user_should_able_to_log_in() {
         String expectedTitle="Library";
         BrowserUtils.waitFor(3);
         String actualTitle=Driver.get().getTitle();

@@ -41,5 +41,11 @@ public abstract class BasePage {
         return pageSubTitle.getText();
     }
 
+    public String getCurrentUrl(WebElement visibleOne) {
+        BrowserUtils.waitForVisibility(visibleOne,3);
+        return  Driver.get().getCurrentUrl();
+    }
+
+
 
 }
