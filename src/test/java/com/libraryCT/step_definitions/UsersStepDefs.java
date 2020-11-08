@@ -3,10 +3,12 @@ package com.libraryCT.step_definitions;
 import com.libraryCT.pages.MainPage;
 import com.libraryCT.pages.UsersPage;
 import com.libraryCT.utilities.BrowserUtils;
-import com.libraryCT.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class UsersStepDefs {
 
@@ -41,10 +43,23 @@ public class UsersStepDefs {
 
 
         System.out.println("new UsersPage().userID.getText() = " + new UsersPage().address.getText());
+
         Assert.assertTrue(new UsersPage().address.getText().contains("Time"));
 
 
     }
+
+    @Then("user should be able to see following table names")
+    public void user_should_be_able_to_see_following_table_names(List<String> tables) {
+
+
+        new UsersPage().booksModule.click();
+        System.out.println("BrowserUtils.getElementsText(new UsersPage().tableNames) = " + BrowserUtils.getElementsText(new UsersPage().tableNames));
+
+        Assert.assertEquals(tables, BrowserUtils.getElementsText(new UsersPage().tableNames));
+
+    }
+
 
 
 }

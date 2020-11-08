@@ -1,6 +1,5 @@
 Feature: Librarian can see book records
 
-  @wip
   Scenario Outline: Librarian should be able to change book records on user page
     Given user on the login page
     When user should able to login with following credential

@@ -28,8 +28,6 @@ public class BrowserUtils {
         Driver.get().switchTo().window(origin);
     }
 
-
-
     /**
      * Moves the mouse to given element
      *

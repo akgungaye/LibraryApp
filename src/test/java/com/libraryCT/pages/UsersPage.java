@@ -62,17 +62,19 @@ public class UsersPage extends BasePage {
     @FindBy(css = ".toast.toast-success")
     public WebElement verificationMessage;
 
-    @FindBy(xpath = "//a[@href='#users']")
-    public WebElement usersButton;
 
     @FindBy(xpath = "//select[@aria-controls='tbl_users']")
     public WebElement recordsDropdown;
 
     @FindBy(xpath = "//div[@class='dataTables_info']")
-    public WebElement dataTablesInfo ;
+    public WebElement totalRecord ;
 
     @FindBy(xpath = "//table[@id='tbl_users']/tbody/tr")
     public List<WebElement> rows;
+
+    @FindBy(xpath = "//th[@data-name]")
+    public   List<WebElement> tableNames;
+
 
 
      public String userIDVerify="";
