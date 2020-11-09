@@ -1,4 +1,5 @@
-Feature: Login feature with valid credantials
+
+Feature: Login/Logout  with valid credantials
 
 	Scenario Outline:Login Functionality with valid credential
 		Given user on the login page

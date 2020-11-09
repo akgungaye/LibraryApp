@@ -1,3 +1,4 @@
+
 Feature:Navigation between modules
 
 
@@ -11,8 +12,7 @@ Feature:Navigation between modules
       | Books           |
       | Borrowing Books |
 
-
-  Scenario:Librarian Navigate module
+Scenario:Librarian Navigate module
     Given user on the login page
     When user should able to login with following credential
       | email    | librarian51@library |

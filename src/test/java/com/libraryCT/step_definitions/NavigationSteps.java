@@ -1,7 +1,7 @@
 package com.libraryCT.step_definitions;
 
+import com.libraryCT.pages.BooksPage;
 import com.libraryCT.pages.LoginPage;
-import com.libraryCT.pages.MainPage;
 import com.libraryCT.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -22,7 +22,7 @@ public class NavigationSteps {
     @Then("user should be able to navigate between tabs")
     public void user_should_be_able_to_navigate_between_tabs(List<String> modules) {
 
-    Assert.assertEquals(modules,BrowserUtils.getElementsText(new MainPage().navbarLink));
+    Assert.assertEquals(modules,BrowserUtils.getElementsText(new BooksPage().navbarLink));
 
     }
 
