@@ -17,7 +17,7 @@ Feature:Books features
       | 100   |
 
 
-   @EUG8-120 @EUG8-111
+   @EUG8-120
   Scenario: Search Functionality
     Given user on the login page
     When user should able to login with following credential
