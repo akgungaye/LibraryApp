@@ -1,4 +1,4 @@
-
+@Reg
 Feature:Books features
   Scenario Outline: Librarian should be able to change book records on user page
     Given user on the login page
@@ -17,7 +17,7 @@ Feature:Books features
       | 100   |
 
 
-  @EUG8-120 @EUG8-111
+   @EUG8-120 @EUG8-111
   Scenario: Search Functionality
     Given user on the login page
     When user should able to login with following credential

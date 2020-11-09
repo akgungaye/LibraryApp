@@ -1,4 +1,4 @@
-
+@Reg
 Feature: Login/Logout  with valid credantials
 
 	Scenario Outline:Login Functionality with valid credential
